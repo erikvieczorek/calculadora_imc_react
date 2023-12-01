@@ -1,0 +1,44 @@
+.resultContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+
+@media screen and (max-width:640px) {
+    .resultContainer {
+        width: 96%;
+    }
+}
+
+.resultValue {
+    font-size: 1.2em;
+    margin: 20px auto;
+}
+
+.resultMessage {
+    font-size: 1em;
+    background: linear-gradient(var(--corFundo2), var(--corFundo2)) padding-box, linear-gradient(to right, var(--corPrincipal), var(--corSecundaria)) border-box;
+	border-radius: 1em;
+	border: 2px solid transparent;
+    padding: 16px;
+    margin-bottom: 1em;
+    line-height: 1.5;
+    
+}
+
+.resultButton {
+    padding: 8px;
+    width: 200px;
+    background: linear-gradient(to right, var(--corSecundaria), var(--corPrincipal));
+    color: var(--corTexto);
+    cursor: pointer;
+    border: none;
+    border-radius: 50em;
+    margin: 0 auto;
+}
+
+.resultButton:hover {
+    filter: brightness(120%);
+}
